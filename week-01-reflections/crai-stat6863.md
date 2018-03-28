@@ -37,15 +37,15 @@ Ans- yes, it will be helpful for us.
 Ans- yes, we can but it is advisable to the email from horizon account.
 
 [Course Structure Quiz, Problem 10]
-* Question (Chinki Stat6663): Should we use GitHub on daily basis?
+* Question (Chinki Stat6663)  Should we use GitHub on daily basis?
 Ans- we should use technology on daily basis to be expert in technology.
 
 [hello-world Week 1 SAS Recipe]
-* Question- Why he is asking to print log and code.He might ask for output as we are doing in other courses.
+* Question (Chinki Stat6663)  Why he is asking to print log and code.He might ask for output as we are doing in other courses.
 Ans- I think log explains the error and he wants to see our error-free code.
 
 [fizz-buzz Week 1 SAS Recipe]
-* Question- What is the use of mod function?
+* Question (Chinki Stat6663)  What is the use of mod function?
 Ans- mod is used for checking remainder.
 
 
