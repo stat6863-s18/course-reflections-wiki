@@ -51,6 +51,53 @@ Ans- mod is used for checking remainder.
 
 
 
+* Recipe: hello-world ;
+*Program name: Program01 is stored in C:\Computational Statistics\SAS\Week01.  
+Programmer: Chinki Rai Date Written: 27 March 2018;
+
+data _null_;
+    put "Hello, STAT 6863! This is Chinki Rai!";
+run;
+
+* Trying in macros ;
+%let name=Chinki Rai;
+%let classname=stat6863;
+
+data _null_;
+	put "Hello,&classname.! This is &name.!";
+run;
+
+* Recipe: fizz-buzz ;
+
+*Program name: Program02 is stored in C:\Computational Statistics\SAS\Week01.  
+Programmer: Chinki Rai Date Written: 27 March 2018;
+
+data _null_;
+	do i=1 to 100;
+		if mod(i,15)=0 then put 'FizzBuzz';
+		else put i= ;
+	end;
+run;
+
+*With the use of Macros;
+%let mod_15=15;
+data _null_;
+	do i=1 to 100;
+		if mod(i,&mod_15.)=0 then put 'FizzBuzz';
+		else put i=;
+	end;
+run;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
