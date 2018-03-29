@@ -60,14 +60,14 @@ data _null_;
 run;
 
 * Trying in macros ;
-%let name=Chinki Rai;
-%let classname=stat6863;
+%let name=Chinki Rai; 
+%let classname=stat6863; 
 
-data _null_;
-put "Hello,&classname.! This is &name.!";
-run;
+data _null_; 
+put "Hello,&classname.! This is &name.!"; 
+run;  
 
-* Recipe: fizz-buzz ;
+* Recipe: fizz-buzz ;  
 
 *Program name: Program02 is stored in C:\Computational Statistics\SAS\Week01.  
 Programmer: Chinki Rai Date Written: 27 March 2018;
