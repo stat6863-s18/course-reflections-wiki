@@ -2,12 +2,17 @@
 # Questions about Problems and Recipes
 
 ***
-1. SAS Macro variables example:
+[Problem 1]
+*SAS Macro variables example:
 
-2. Another SAS macro;
+[Problem 2]
+*Another SAS macro;
+
+[Problem 3]
+
 
 # Recipes Exploration Results
-
+```
 1.
 options symbolgen;
 %let mod1=15;
