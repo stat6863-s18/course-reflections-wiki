@@ -3,34 +3,39 @@
 
 
 
-[Course Textbook Chapter 9, Problem 1]
-- Question (ttruong59-stat6863): Are macro variables always user-defined, and their values remain constant until they are changed by the user? 
-- Answer (ttruong59-stat6863): No. There are 2 types of macro variables: automatic and user-defined. SAS provides automatic macro variables that contain information about the computing environment. Automatic macro variables are created when SAS is invoked. We also can create and define own macro variables with the %LET statement.
+[Course Structure Quiz, Problem 1]
+* Question (ttruong59-stat6863): How many weekly forum posts does a student need to complete in order to earn the Reading for Breath achievement for the course? 
+* Answer (ttruong59-stat6863): Student needs to meet at least 8 out of 10 weekly forum posts to earn the Reading for Breath achievement.
 
 
 
-[Course Textbook Chapter 9, Problem 2]
-- Question (ttruong59-stat6863): How do users reference a macro variable?
-- Answer (ttruong59-stat6863): Users need to precede the name with an ampersand (&) to reference a macro variable. 
+[Course Structure Quiz, Problem 2]
+* Question (ttruong59-stat6863): How many weekly quizzes does a student need to complete in order to earn the Reading for Depth achievement for the course?
+* Answer (ttruong59-stat6863): Student needs to meet at least 8 out of 10 weekly quizzes to earn the Reading for Depth achievement.
 
 
 
-[Course Textbook Chapter 9, Problem 4]
-- Question (ttruong59-stat6863): Is it necessary to enclose the assigned value in quotation marks when creating a macro variable?
-- Answer (ttruong59-stat6863): No. There’s no need to enclose the value in quotation marks. If we do, the quotation marks will be stored as part of the value exactly as it is assigned.
+[Course Structure Quiz, Problem 3]
+* Question (ttruong59-stat6863): How many project steps does a student need to complete in order to earn the Team-based Problem Solving achievement for the course?
+* Answer (ttruong59-stat6863): Student needs to complete 9 steps, beginning with the selection of a broad research interests.
 
 
 
-[Course Textbook Chapter 9, Problem 7]
-- Question (ttruong59-stat6863): To manipulate character strings, which macro character functions enable users to perform character manipulations and/or change the value of a macro variable value?
-- Answer (ttruong59-stat6863): Macro character functions like %UPCASE and %SUBSTR allow users to perform character manipulations on macro variable values. For instance, %UPCASE function allow users to change the value of a macro variable from lowercase to uppercase before submitting the value in a SAS program while %SUBSTR enables users to extract part of a character string from the value of a macro variable.
+[Course Structure Quiz, Problem 4]
+* Question (ttruong59-stat6863): In order to earn a good grade, an A for example, in for this course, which achievements should be earned?
+* Answer (ttruong59-stat6863): Students needs to complete all 5 professional practices throughout the course to earn an A.
 
 
 
-[Course Textbook Chapter 9, Problem 8]
-- Question (ttruong59-stat6863): Is it possible to combine a macro variable reference with text?
-- Answer (ttruong59-stat6863): Yes, it is possible to do so. Users can place text immediately before or after a macro variable reference. We can also be able to combine 2 macro variable references to create a new token. And there are 4 types of token that SAS recognizes as follows: literals, names, numbers, and special characters.
+[Course Structure Quiz, Problem 5]
+* Question (ttruong59-stat6863): What is the best way or channel to reach out to the instruction with questions?
+* Answer (ttruong59-stat6863): Slack
 
+
+
+[fizz-buzz Week 1 SAS Recipe]
+* Question (ttruong58-stat6863): What is the printout of numbers that are multiples of both three and five?
+* Answer (ttruong59-stat6863): 15,30,45,60,75,90
 
 
 
