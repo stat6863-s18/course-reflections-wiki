@@ -77,7 +77,7 @@ run;
 * modified so that the word “FizzBuzz” is printed if the index variable i is divisible by 15
 data _null_;
     do i = 1 to 100;
-	if mod (i, 15) = 0 then put 'FizzBuzz';
+        if mod (i, 15) = 0 then put 'FizzBuzz';
         else if mod (i ,3) = 0 then put 'Fizz';
         else if mod (i , 5) = 0 then put 'Buzz';
         else put i =;
