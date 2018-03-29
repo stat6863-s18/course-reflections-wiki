@@ -64,7 +64,7 @@ run;
 %let classname=stat6863;
 
 data _null_;
-	put "Hello,&classname.! This is &name.!";
+put "Hello,&classname.! This is &name.!";
 run;
 
 * Recipe: fizz-buzz ;
@@ -73,19 +73,19 @@ run;
 Programmer: Chinki Rai Date Written: 27 March 2018;
 
 data _null_;
-	do i=1 to 100;
-		if mod(i,15)=0 then put 'FizzBuzz';
-		else put i= ;
-	end;
+do i=1 to 100;
+if mod(i,15)=0 then put 'FizzBuzz';
+else put i= ;
+end;
 run;
 
 *With the use of Macros;
 %let mod_15=15;
 data _null_;
-	do i=1 to 100;
-		if mod(i,&mod_15.)=0 then put 'FizzBuzz';
-		else put i=;
-	end;
+do i=1 to 100;
+if mod(i,&mod_15.)=0 then put 'FizzBuzz';
+else put i=;
+end;
 run;
 
 
