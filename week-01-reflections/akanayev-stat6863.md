@@ -10,6 +10,7 @@
 
 [Problem 3]
 
+***
 
 # Recipes Exploration Results
 ```
