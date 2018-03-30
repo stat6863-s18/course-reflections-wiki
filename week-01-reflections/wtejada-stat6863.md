@@ -1,24 +1,15 @@
 
 # Questions about Problems and Recipes
 
-
-
-[place your questions/answers here, and delete this line]
+Why was the output window up at start up in older times?
+Are there only PROC and DATA steps in SAS?
+Does the log always catch all errors?
+Is let the only way to add a macro variable in a program?
+Is there another way of adding 'Fizz Buzz' other than using mod(i,15)?
 
 
 
 ***
-
-
-
-# Recipes Exploration Results
-
-
-
-```
-
-
-[place your recipes exploration here, and delete this line]
 
 
 
