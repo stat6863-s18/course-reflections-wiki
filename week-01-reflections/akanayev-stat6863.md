@@ -10,13 +10,13 @@
 
 [Problem 3]
 *What values can Automatic and user defined macro variables?
-***
 
 [Problem 4]
 *What is value and length of %let name= Marie Hudson   ;?
 
 [Problem 5]
 What type of tokens is available in SAS?
+***
 
 # Recipes Exploration Results
 ```
