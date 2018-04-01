@@ -90,12 +90,8 @@ data _null_;
     put "Hello, &className.!";
 run;
 
-*Extra practice to output text and macro variables together for Hello World problem;
-%let Class = STAT 6863;
-%let Name=This is Azamat;
-data _null_;
-    put "Hello, &Class.! &Name";
-run;
+
+
 
 
 * Recipe: fizz-buzz ;
