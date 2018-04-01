@@ -1,26 +1,44 @@
-
 # Questions about Problems and Recipes
 
-[Course Reflection, Question 1]
-* Question (wtejada-stat6863):Why was the output window up at start up in older times?
+[Course Set Up, Question 1]
+* Question (wtejada-stat6863):Is Github Desktop the same as Github accessed through a browser?
 
-[Course Reflection, Question 2]
-* Question (wtejada-stat6863):Are there only PROC and DATA steps in SAS?
+[Course Forum Post, Question 2]
+* Question (wtejada-stat6863):Can the forum posts be anything statistics related, or does it have to be based on programming? 
 
 [Course Reflection, Question 3]
-* Question (wtejada-stat6863):Why is the % symbol used for SAS Macros? Just because or is there some significance to it?
+* Question (wtejada-stat6863): These answers are part of the reflection and are written in Markdown. Does that mean it is the same as the format RMarkdown uses?
 
-[Course Reflection, Question 4]
-* Question (wtejada-stat6863):Does the log always catch all errors?
+[Course Project Step, Question 4]
+* Question (wtejada-stat6863): The acheivement has the word “Team” in it. Does that mean we will be required to partner up at any point?
 
-[Course Reflection, Question 5]
-* Question (wtejada-stat6863):Is let the only way to add a macro variable in a program?
+[Course Final Exam, Question 5]
+* Question (wtejada-stat6863):How long ago did you take the SAS Advanced Programmer Exam?
 
-[Course Recipe Reflection, Question 1]
+[hello-world Week 1 SAS Recipe]
 * Question (wtejada-stat6863): In the 'Hello World!' program we used put to add a string to our dataset. Is there any other way to add a string other than by using put?
 
-[Course Recipe Reflection, Question 2]
+[fizz-buzz Week 1 SAS Recipe]
 * Question (wtejada-stat6863):Is there another way of adding 'Fizz Buzz' other than using mod(i,15)?
+
+
+* Recipe: hello-world ;
+* original recipe:
+data _null_;
+    put 'Hello, World!';
+run;
+
+
+* Recipe: fizz-buzz ;
+* original recipe:
+data _null_;
+    do i = 1 to 100;
+        if mod(i,15)=0 then put 'Fizz Buzz';
+		else if mod(i,3)=0 then put 'Fizz';
+		else if mod(i,5)=0 the put 'Buzz';
+		else put i=;
+	end;
+run;
 
 
 
