@@ -54,7 +54,9 @@ else put i=;
 end;
 run;
 
-* modified to use macro variables to parametrize what's printed when; corrected code provided in the example contribution to reference “&mod2msg.” instead of "&mod1msg." in line 3 of the data step.
+* modified to use macro variables to parametrize what's printed when; 
+corrected code provided in the example contribution to reference “&mod2msg.” instead of "&mod1msg." 
+in line 3 of the data step.
 
 %let mod1 = 3;
 %let mod1msg = Fizz;
