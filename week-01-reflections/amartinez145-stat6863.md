@@ -1,3 +1,6 @@
+
+# Questions about Problems and Recipes
+
 [Course Structure Quiz, Question 1]
 * Question (amartinez145-stat6863): What method will be used to share the Week1 setup demo (screen-sharing, video/teleconference, hangout IM only)? Should we send any files in advance?
 
