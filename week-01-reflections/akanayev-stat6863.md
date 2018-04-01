@@ -2,25 +2,124 @@
 # Questions about Problems and Recipes
 
 ***
-[Problem 1]
-*SAS Macro variables example:
+[Course Structure Quiz, Problem 1]
+* Question (akanayev-stat6863): Can I use SAS University Edition instead of SAS Base installed in BayCloud as more convenient way to me to SAS practice?
 
-[Problem 2]
-*Another SAS macro;
 
-[Problem 3]
-*What values can Automatic and user defined macro variables?
 
-[Problem 4]
-*What is value and length of %let name= Marie Hudson   ;?
 
-[Problem 5]
-What type of tokens is available in SAS?
+[Course Structure Quiz, Problem 2]
+* Question (akanayev-stat6863):
+
+
+
+
+[Course Structure Quiz, Problem 3]
+* Question (akanayev-stat6863): Is there the purpose of Weekly Reflection assignment to understand weekly assigned course quiz problems as well as to explore SAS Recipes?
+
+
+
+
+[Course Structure Quiz, Problem 4]
+* Question (akanayev-stat6863): What should we focus on to prepare for regular Google Hangouts meeting with instructor? 
+
+
+
+
+[Course Structure Quiz, Problem 5]
+* Question (akanayev-stat6863): To prepare for final exam should we focus on primarily on SAS Recipes in Weekly Reflection assignment?
+
+
+
+[Course Structure Quiz, Problem 6]
+* Question (akanayev-stat6863):
+
+
+
+[Course Structure Quiz, Problem 7]
+* Question (akanayev-stat6863):
+
+
+
+[Course Structure Quiz, Problem 8]
+* Question (akanayev-stat6863):
+
+
+
+[Course Structure Quiz, Problem 9]
+* Question (akanayev-stat6863):
+
+
+
+[Course Structure Quiz, Problem 10]
+* Question (akanayev-stat6863):
+
+
+
+[hello-world Week 1 SAS Recipe]
+* Question (ilankham-stat6863): Can we always use double quotation instead of default practice of single quotation to prevent problem when we want to output text and macro variables together in SAS log?
+* Question (akanayev-stat6863): When we want to separate macro variable from text should we always put "." at the end of macro variables as a rule? For instance, in this part of SAS recipe of the problem: "&className."?
+
+
+
+[fizz-buzz Week 1 SAS Recipe]
+* Question (ilankham-stat6863):
+
+
+
 ***
 
 # Recipes Exploration Results
 ```
-1.
+* Recipe: hello-world ;
+
+* original recipe:
+data _null_;
+    put 'Hello, World!';
+run;
+
+* to print the modified content of a macro variable;
+* note the need to switch to double-quote for the macro variable to render;
+%let className = STAT 6863;
+data _null_;
+    put "Hello, &className.!";
+run;
+
+*Extra practice to output text and macro variables together for Hello World problem;
+%let Class = STAT 6863;
+%let Name=This is Azamat;
+data _null_;
+    put "Hello, &Class.! &Name";
+run;
+
+
+
+* Recipe: fizz-buzz ;
+
+* initial recipe:
+data _null_;
+    do i = 1 to 100;
+        if mod(i,3) = 0 then put 'Fizz';
+        else if mod(i, 5) = 0 then put 'Buzz';
+        else put i=;
+    end;
+run;
+
+* modified to use macro variables to parametrize what is going to be printed when;
+* note the need to switch to double-quote for macro variables to render;
+%let mod1 = 3;
+%let mod1msg = Fizz;
+%let mod2 = 5;
+%let mod2msg = Buzz;
+data _null_;
+    do i = 1 to 100;
+        if mod(i,& mod1.) = 0 then put "&mod1msg.";
+        else if mod(i, &mod2.) = 0 then put "&mod1msg.";
+        else put i=;
+    end;
+run;
+
+*further exploration of Fizz Buzz problem to extra practice with macro variables to print FizzBuzz when the number is divided by 15;
 options symbolgen;
 %let mod1=15;
 %let mod2=3;
@@ -36,75 +135,6 @@ data _null_;
    else put i=;
  end;
 run;
-
-2.
-%let Class = STAT 6863;
-%let Name=This is Azamat;
-data _null_;
-    put "Hello, &Class.! &Name";
-run;
-
-*Retyping SAS Recipes FizzBuzz and Hello World
-*******************************************************************************;
-**************** 80-character banner for column width reference ***************;
-* (set window width to banner width to calibrate line length to 80 characters *;
-*******************************************************************************;
-
-
-*******************************************************************************;
-* hello-world ;
-*******************************************************************************;
-/*
-Scenario: Printing to the SAS log.
-
-Approach: Use a null data step and put statement to write to the log
-
-Recipe <with everything in square brackets to be filled in for actual use>:
-
-data _null_;
-    put "<message>";
-run;
-*/
-
-*Example;
-data _null_;
-    put 'Hello, World!';
-run;
-/*
-Notes:
-(1) In this example, single-quotes have been used to delimit the string literal 'Hello, World!', meaning we know the string is everything between the opening and closing single-quote marks. However, the recipe used double-quote marks. In general, either single-quotes or double-quotes can be used to delimit SAS string literals, but double-quotes should be used whenever so-called macro variables are included in string literals, as we'll see later. (For now, just remember that SAS treats single- and double-quotes differently for something called macros.)
-*/
-
-*******************************************************************************;
-* fizz-buzz ;
-*******************************************************************************;
-
-/*
-Scenario: Solve a simplified version of the FizzBuzz Challenge
-
-Approach: Use a null data step and business logic to write to the log
-*/
-
-*Example;
-data _null_;
-    do i = 1 to 100;
-        if mod(i,3) = 0 then put 'Fizz';
-        else if mod(i, 5) = 0 then put 'Buzz';
-        else put i=;
-    end;
-run;
-)
-/*
-Notes:
-(1) In this example, the four main components of imperative programming are used: (1) The variable i is used to hold a value that varies; (2) the mod function is called with behavior dependent on a variable's current value (e.g., mod(i,3) evaluates to 0 if i is divisible by 3, and is 1 otherwise); (3) conditional statement execution in the form an if-else if-else branching structure, where only one of the three branches is executed, depending upon whether i is divisible by 3, by 5, or by neither; and (4) looping in the form of the do-loop repeating the same block of code (the 3-line if-else if-else branching structure) 100 times, once for each value of i, which starts with the value 1 and is incremented by 1 repeatedly.
-(2) In general, SAS data steps will use these four components, in addition to dataset access methods, to prepare/clean data for analysis. This type of programming is commonly called "business logic" since it encapsulated domain-specific behavior, here to solve a specific programming challenge.
-*/
-
-```
-
-
-
-
 
 
 ```
