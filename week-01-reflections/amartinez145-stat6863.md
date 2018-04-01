@@ -6,8 +6,7 @@
 
 [Course Structure Quiz, Question 10]
 * Question (amartinez145-stat6863): Why are there multiple technologies with overlapping functionalities (file-sharing, messaging) used for this class?
-
-*Answer (amartinez145-stat6863): To simulate potential work environments where technology is adopted piecemeal and holistic solutions are rare
+* Answer (amartinez145-stat6863): To simulate potential work environments where technology is adopted piecemeal and holistic solutions are rare
 
 [Weekly Reflections Instructions, Preparing contributions]
 * Question (amartinez145-stat6863): What are good resources for identifying opportunities to explore coding options in SAS? SAS can be very procedure specific (only certain functions can be performed in certain procedures) and sometimes I am challenged by not understanding the limitations of certain commands/procedures and/or the meaning of a specific command or option.
