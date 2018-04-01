@@ -32,6 +32,11 @@
 * Answer (ttruong59-stat6863): Slack
 
 
+[hello-world Week 1 SAS Recipe]
+* Question (ttruong59-stat6863): Is there any difference when using single quote (') and double quote (") mark with a PUT statement?
+* Answer (ttruong59-stat6863): SAS recognizes both single and double quote marks and allows to have two deep quoting.
+
+
 
 [fizz-buzz Week 1 SAS Recipe]
 * Question (ttruong58-stat6863): What is the printout of numbers that are multiples of both three and five?
