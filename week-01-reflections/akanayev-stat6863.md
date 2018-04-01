@@ -85,7 +85,7 @@ run;
 
 * modified to print the content of a macro variable;
 * note the need to switch to double-quote for the macro variable to render;
-%let className = STAT 6863;
+&let className = STAT 6863;
 data _null_;
     put "Hello, &className.!";
 run;
@@ -107,39 +107,21 @@ data _null_;
         else if mod(i, 5) = 0 then put 'Buzz';
         else put i=;
     end;
-run;
+run;     
 
 * modified to use macro variables to parametrize what's printed when;
 * note the need to switch to double-quote for macro variables to render;
 %let mod1 = 3;
-%let mod1msg = Fizz;
-%let mod2 = 5;
+&let mod1msg = Fizz;
+&let mod2 = 5;
 %let mod2msg = Buzz;
 data _null_;
     do i = 1 to 100;
         if mod(i,& mod1.) = 0 then put "&mod1msg.";
-        else if mod(i, &mod2.) = 0 then put "&mod1msg.";
+        else if mod(i, &mod2.) = 0 then put "mod1msg.";
         else put i=;
     end;
 run;
-
-*further exploration of Fizz Buzz problem to extra practice with macro variables to print FizzBuzz when the number is divided by 15;
-options symbolgen;
-%let mod1 = 15;
-%let mod2 = 3;
-%let mod3 = 5;
-%let a = FizzBuzz;
-%let b = Fizz;
-%let c = Buzz;
-data _null_;
-    do i = 1 to 100;
-        if mod(i,&mod1) = 0 then put "&a";
-        else if mod(i,&mod2) = 0 then put "&b";
-        else if mod(i,&mod3) = 0 then put "&c";
-        else put i=;
-    end;
-run;
-;
 
 
 ```
