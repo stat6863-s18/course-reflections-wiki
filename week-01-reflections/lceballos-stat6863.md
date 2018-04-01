@@ -4,31 +4,31 @@
 
 
 [Course Structure Quiz, Problem 1]
-* Question lceballos-stat6863): What is the difference between forking and branching?
+* Question (lceballos-stat6863): What is the difference between forking and branching?
 
 
 
 [Course Structure Quiz, Problem 2]
-* Question lceballos-stat6863): For the weekly forum posts, can we use other sources that are not on the weekly forum post instruction sheet?
+* Question (lceballos-stat6863): For the weekly forum posts, can we use other sources that are not on the weekly forum post instruction sheet?
 
 
 
 [Course Structure Quiz, Problem 4]
-* Question lceballos-stat6863): For the code reviews, do we need a webcam or can we just screen share?
+* Question (lceballos-stat6863): For the code reviews, do we need a webcam or can we just screen share?
 
 
 
 [Course Structure Quiz, Problem 6]
-* Question lceballos-stat6863): Can we use different website sources for the weekly forum posts?
+* Question (lceballos-stat6863): Can we use different website sources for the weekly forum posts?
 
 
 
 [Course Structure Quiz, Problem 8]
-* Question lceballos-stat6863): How will extra credit be given if grade is dependent on acheivements?
+* Question (lceballos-stat6863): How will extra credit be given if grade is dependent on acheivements?
 
 
 [hello-world Week 1 SAS Recipe]
-* Question lceballos-stat6863): How can you import external modules or libraries in SAS?
+* Question (lceballos-stat6863): How can you import external modules or libraries in SAS?
 
 
 
