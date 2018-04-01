@@ -8,6 +8,11 @@
 
 
 
+[Course Structure Quiz, Problem 2]
+* Question lceballos-stat6863): For the weekly forum posts, can we use other sources that are not on the weekly forum post instruction sheet?
+
+
+
 [Course Structure Quiz, Problem 4]
 * Question lceballos-stat6863): For the code reviews, do we need a webcam or can we just screen share?
 
