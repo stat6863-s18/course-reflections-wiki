@@ -1,8 +1,6 @@
 
 # Questions about Problems and Recipes
 
-
-
 [Course Structure Quiz, Problem 1-4]
 * Question (pso-stat6863): Was the magic numbers 8 and 10 and "met"? I'm not entirely sure I understood the first 4 questions.
 
@@ -33,7 +31,6 @@
 
 
 # Recipes Exploration Results
-
 
 
 ```
