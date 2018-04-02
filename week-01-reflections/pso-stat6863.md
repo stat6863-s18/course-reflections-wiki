@@ -1,45 +1,38 @@
-
-# Questions about Problems and Recipes
+Questions about Problems and Recipes
 
 
 
 [Course Structure Quiz, Problem 1-4]
+
 * Question (pso-stat6863): Was the magic numbers 8 and 10 and "met"? I'm not entirely sure I understood the first 4 questions.
 
 [Course Structure Quiz, Problem 5]
+
 * Question (pso-stat6863): How would weekly reflections prepare you for the final?
 
 [Course Structure Quiz, Problem 6]
+
 * Question (pso-stat6863): What exactly are these achievements? Can you give some examples?
 
 [Course Structure Quiz, Problem 7]
+
 * Question (pso-stat6863): Doesn't the sylabus say we can turn in late or incomplete submissions with your approval?
 
-[Course Structure Quiz, Problem 8]
-* Question (pso-stat6863): On average, how much extra credit have you given in a quarter?
-
 [hello-world Week 1 SAS Recipe]
+
 * Question (pso-stat6863): What is the difference between single and double quotes?
-- Answer (pso-stat6863): Preference?
+* Answer (pso-stat6863): Is it preference?
 
 [fizz-buzz Week 1 SAS Recipe]
+
 * Question (pso-stat6863): Is there a correct answer? Is the basis of the logic suppose to consist of 3 and 5?
-- Answer (pso-stat6863): Maybe there are many answers.
+* Answer (pso-stat6863): Maybe there are many answers.
+
+Recipes Exploration Results
 
 
-
-***
-
-
-
-# Recipes Exploration Results
-
-
-
-```
 
 * Recipe: hello-world example;
-
 * original hello-world recipe:
 data _null_;
     put 'Hello, World!';
@@ -47,14 +40,13 @@ run;
 
 * modified hello-world recipe;
 * create a table instead of showing in the log;
-
+%let your_name = Tuan Truong;
 data hello;
     put "Hello, World!";
 run;
 
 
 * Recipe: fizz-buzz example;
-
 * original fizz-buzz recipe:
 data _null_;
     do i = 1 to 100;
@@ -66,7 +58,6 @@ run;
 
 * modified fizz-buzz example;
 * changed numbers divisible by 15;
-
 data _null_;
     do i = 1 to 100;
         if mod(i, 1) = 0 then put "FIZZ";
@@ -74,6 +65,3 @@ data _null_;
         else put i=;
     end;
 run;
-
-
-```
