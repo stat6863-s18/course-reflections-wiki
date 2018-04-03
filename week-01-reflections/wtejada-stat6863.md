@@ -21,6 +21,8 @@
 [fizz-buzz Week 1 SAS Recipe]
 * Question (wtejada-stat6863):Is there another way of adding 'Fizz Buzz' other than using mod(i,15)?
 
+
+# Recipes
 ```
 * Recipe: hello-world ;
 * original recipe:
