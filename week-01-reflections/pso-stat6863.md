@@ -6,7 +6,6 @@
 
 [Course Structure Quiz, Problem 5]
 * Question (pso-stat6863): How would weekly reflections prepare you for the final?
-
 [Course Structure Quiz, Problem 6]
 * Question (pso-stat6863): What exactly are these achievements? Can you give some examples?
 
