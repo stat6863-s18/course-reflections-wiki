@@ -3,17 +3,23 @@
 
 [Course Structure Quiz, Problem 1-4]
 * Question (pso-stat6863): Was the magic numbers 8 and 10 and "met"? I'm not entirely sure I understood the first 4 questions.
+
 [Course Structure Quiz, Problem 5]
 * Question (pso-stat6863): How would weekly reflections prepare you for the final?
+
 [Course Structure Quiz, Problem 6]
 * Question (pso-stat6863): What exactly are these achievements? Can you give some examples?
+
 [Course Structure Quiz, Problem 7]
 * Question (pso-stat6863): Doesn't the sylabus say we can turn in late or incomplete submissions with your approval?
+
 [Course Structure Quiz, Problem 8]
 * Question (pso-stat6863): On average, how much extra credit have you given in a quarter?
+
 [hello-world Week 1 SAS Recipe]
 * Question (pso-stat6863): What is the difference between single and double quotes?
 - Answer (pso-stat6863): Preference?
+
 [fizz-buzz Week 1 SAS Recipe]
 * Question (pso-stat6863): Is there a correct answer? Is the basis of the logic suppose to consist of 3 and 5?
 - Answer (pso-stat6863): Maybe there are many answers.
