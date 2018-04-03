@@ -21,14 +21,14 @@
 [fizz-buzz Week 1 SAS Recipe]
 * Question (wtejada-stat6863):Is there another way of adding 'Fizz Buzz' other than using mod(i,15)?
 
-
+```
 * Recipe: hello-world ;
 * original recipe:
 data _null_;
     put 'Hello, World!';
 run;
-
-
+```
+```
 * Recipe: fizz-buzz ;
 * original recipe:
 data _null_;
@@ -41,7 +41,7 @@ data _null_;
 run;
 
 
-
+```
 ***
 
 
