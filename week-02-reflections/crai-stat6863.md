@@ -3,7 +3,36 @@
 
 
 
-[place your questions/answers here, and delete this line]
+[Course Structure Quiz, Problem 9.1]
+
+* Question(crai-stat6863): Which of following is false?
+* Answer(crai-stat6863) : Macros variables are not always user defined. Two type of macros variables are user defined and
+automatice macro variable.
+
+
+[Course Structure Quiz, Problem 9.2]
+* Question(crai-stat6863) : why not with single quote?
+* Answer(crai-stat6863) : If we put title in single quote, it will not resolve macro variable.
+
+[Course Structure Quiz, Problem 9.3]
+* Question(crai-stat6863) : what is differnce between &month and &month.?
+
+[Course Structure Quiz, Problem 9.4]
+* Question(crai-stat6863) : who to assign macro variable location as storage?
+* Answer(crai-stat6863) : %let location= storage;
+
+[Course Structure Quiz, Problem 9.5]
+* Question(crai-stat6863) : what value do the assign to macro variable area?
+* Answer(crai-stat6863) : area will take "Southeast"
+
+[Course Structure Quiz, Problem 9.7]
+* Question(crai-stat6863) : Macros character functions.
+* Answer(crai-stat6863) : Maccos character function is similar to Data step function, It will have property to handle 
+macro variables.
+
+[Course Structure Quiz, Problem 9.9]
+* Question(crai-stat6863) : what is differnce between option A and C.
+* Answer(crai-stat6863) : In option A period 1 and period3 are taking space.
 
 
 
@@ -18,7 +47,27 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+* Problem9.5 SAS code ;
+data _null_;
+%let area = "Southeast"; 
+%let reptitle = *  Sales Report for &area Area  * ; 
+%put &reptitle;
+run;
+
+
+*Problem9.9 SAS Code;
+data _null_;
+%let month1 = June;
+%let month2 = July;
+%let period1 = &month1&month2;
+%let period2 = May&month1;
+%let period3 = &month2.Aug; 
+	%put &month1;
+	%put &month2;
+	%put &period1;
+	%put &period2;
+	%put &period3;
+run;
 
 
 
