@@ -1,18 +1,18 @@
 # Questions about Problems and Recipes
 
-[Course Set Up, Question 1]
+[Course Structure Quiz, Problem 1]
 * Question (wtejada-stat6863):Is Github Desktop the same as Github accessed through a browser?
 
-[Course Forum Post, Question 2]
+[Course Structure Quiz, Problem 2]
 * Question (wtejada-stat6863):Can the forum posts be anything statistics related, or does it have to be based on programming? 
 
-[Course Reflection, Question 3]
+[Course Structure Quiz, Problem 3]
 * Question (wtejada-stat6863): These answers are part of the reflection and are written in Markdown. Does that mean it is the same as the format RMarkdown uses?
 
-[Course Project Step, Question 4]
+[Course Structure Quiz, Problem 4]
 * Question (wtejada-stat6863): The acheivement has the word “Team” in it. Does that mean we will be required to partner up at any point?
 
-[Course Final Exam, Question 5]
+[Course Structure Quiz, Problem 5]
 * Question (wtejada-stat6863):How long ago did you take the SAS Advanced Programmer Exam?
 
 [hello-world Week 1 SAS Recipe]
