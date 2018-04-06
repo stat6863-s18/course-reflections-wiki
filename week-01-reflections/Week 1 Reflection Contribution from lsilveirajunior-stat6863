@@ -1,22 +1,22 @@
-
 # Questions about Problems and Recipes
 
 
-
 [Course Structure Quiz, Problem 2]
-- Question (lsilveirajunior-stat6863): As a question and also a suggestion, wouldn't it be easier to send the weekly forum post through Slack or GitHub as a way of concentrating our submissions in a single platform?
+* Question (lsilveirajunior-stat6863): As a question and also a suggestion, wouldn't it be easier to send the weekly forum post through Slack or GitHub as a way of concentrating our submissions in a single platform?
 
 [Course Structure Quiz, Problem 5]
-- Question (lsilveirajunior-stat6863): Will the final exam have multiple choice questions similar to the exercises done during the 10-week program or new material will be added to it?
+* Question (lsilveirajunior-stat6863): Will the final exam have multiple choice questions similar to the exercises done during the 10-week program or new material will be added to it?
 
 [Course Structure Quiz, Problem 6]
-- Question (lsilveirajunior-stat6863): How much weight will Team-based Problem Solving Achievement affect the final grade? If the group doesn't perform well, is it possible to perform other tasks to achieve better grades?
+* Question (lsilveirajunior-stat6863): How much weight will Team-based Problem Solving Achievement affect the final grade? If the group doesn't perform well, is it possible to perform other tasks to achieve better grades?
 
 [Course Structure Quiz, Problem 8]
-- Question (lsilveirajunior-stat6863): Will extra credits be provided for implemented suggestions and corrections or just the participation and interaction will allow the student to get better grades?
+* Question (lsilveirajunior-stat6863): Will extra credits be provided for implemented suggestions and corrections or just the participation and interaction will allow the student to get better grades?
 
 [Course Structure Quiz, Problem 9]
-- Question (lsilveirajunior-stat6863): After using Slack, I feel that it's a much easier interface to communicate than through emails. DMing through Slack would be an appropriate tool in a workplace environment or emails are more recommended? 
+* Question (lsilveirajunior-stat6863): After using Slack, I feel that it's a much easier interface to communicate than through emails. DMing through Slack would be an appropriate tool in a workplace environment or emails are more recommended? 
+
+
 
 
 ***
@@ -27,60 +27,48 @@
 
 
 
-```
-* Recipe: hello-world;
 
+```
+* Recipe: hello-world ;
+
+* original recipe:
 data _null_;
     put 'Hello, World!';
 run;
 
-
-* Recipe: hello-world;
-
-* Recipe: class-greeting;
-
-data _null_ ;
-    put " Hello , STAT 6863! This is Luiz Silveira!";
-run ;
+* modified to print the content of a macro variable;
+* note the need to switch to double-quote for the macro variable to render;
+%let className = STAT 6863;
+data _null_;
+    put "Hello, &className.!";
+run;
 
 
 
-* Recipe: fizz-buzz;
+* Recipe: fizz-buzz ;
 
 * original recipe:
 data _null_;
     do i = 1 to 100;
         if mod(i,3) = 0 then put 'Fizz';
-        else if mod(i,5) = 0 then put 'Buzz';
+        else if mod(i, 5) = 0 then put 'Buzz';
         else put i=;
     end;
 run;
 
-* Modified recipe: FizzBuzz print when divisible by 15;
-
+* modified to use macro variables to parametrize what's printed when;
+* note the need to switch to double-quote for macro variables to render;
+%let mod1 = 3;
+%let mod1msg = Fizz;
+%let mod2 = 5;
+%let mod2msg = Buzz;
 data _null_;
     do i = 1 to 100;
-        if mod (i,15) = 0 then put 'FizzBuzz';
-        else if mod (i, 3) = 0 then put 'Fizz';
-        else if mod (i,5) = 0 then put 'Buzz';
+        if mod(i,& mod1.) = 0 then put "&mod1msg.";
+        else if mod(i, &mod2.) = 0 then put "&mod1msg.";
         else put i=;
     end;
 run;
 
-
-[Course Structure Quiz, Problem 2]
-- Question (lsilveirajunior-stat6863): As a question and also a suggestion, wouldn't it be easier to send the weekly forum post through Slack or GitHub as a way of concentrating our submissions in a single platform?
-
-[Course Structure Quiz, Problem 5]
-- Question (lsilveirajunior-stat6863): Will the final exam have multiple choice questions similar to the exercises done during the 10-week program or new material will be added to it?
-
-[Course Structure Quiz, Problem 6]
-- Question (lsilveirajunior-stat6863): How much weight will Team-based Problem Solving Achievement affect the final grade? If the group doesn't perform well, is it possible to perform other tasks to achieve better grades?
-
-[Course Structure Quiz, Problem 8]
-- Question (lsilveirajunior-stat6863): Will extra credits be provided for implemented suggestions and corrections or just the participation and interaction will allow the student to get better grades?
-
-[Course Structure Quiz, Problem 9]
-- Question (lsilveirajunior-stat6863): After using Slack, I feel that it's a much easier interface to communicate than through emails. DMing through Slack would be an appropriate tool in a workplace environment or emails are more recommended? 
-
 ```
+
