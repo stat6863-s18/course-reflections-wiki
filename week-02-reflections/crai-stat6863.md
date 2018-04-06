@@ -34,6 +34,23 @@ macro variables.
 * Question(crai-stat6863) : what is differnce between option A and C.
 * Answer(crai-stat6863) : In option A period 1 and period3 are taking space.
 
+[Course Structure Quiz, Problem 10.1]
+* Question(crai-stat6863) : When Macro functions processed?
+* Answer( crai-stat6863) : Macro functions are processed by macro processor before data execution or complilation.
+
+[Course Structure Quiz, Problem 10.2]
+* Question(crai-stat6863) : when to use variable East without quote?
+* Answer(crai-stat6863) : whenever east is used as variable and refering by east.
+
+[Course Structure Quiz, Problem 10.5]
+* Question(crai-stat6863) : What if more than four consecutive ampersands precede a name token?
+* Answer(crai-stat6863) : The forward rescan rule is used and It will resolve from left to right.
+
+[Course Structure Quiz, Problem 10.8]
+* Question(crai-stat6863) : Resolve &&teach&crs?
+* Answer(crai-stat6863) : First it will resolve &crs to 3 and then teach3 to Forest, Mr. Peter.
+
+
 
 
 ***
