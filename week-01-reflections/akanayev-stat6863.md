@@ -7,12 +7,6 @@
 
 
 
-[Course Structure Quiz, Problem 2]
-* Question (akanayev-stat6863): 
-- Answer (akanayev-stat6863): 
-
-
-
 [Course Structure Quiz, Problem 3]
 * Question (akanayev-stat6863): Is the purpose of Weekly Reflection assignment to understand weekly assigned course quiz problems as well as to explore SAS Recipes to be prepared for final exam?
 
@@ -20,39 +14,12 @@
 
 [Course Structure Quiz, Problem 4]
 * Question (akanayev-stat6863): What should we focus on to prepare for regular Google Hangouts meeting with instructor? 
-- Answer (akanayev-stat6863): 
 
 
 
 [Course Structure Quiz, Problem 5]
 * Question (akanayev-stat6863): To prepare for final exam should we focus on primarily on SAS Recipes in Weekly Reflection assignment?
-- Answer (akanayev-stat6863): 
-
-
-
-[Course Structure Quiz, Problem 6]
-* Question (akanayev-stat6863): 
-
-
-
-[Course Structure Quiz, Problem 7]
-* Question (akanayev-stat6863): 
-
-
-
-[Course Structure Quiz, Problem 8]
-* Question (akanayev-stat6863): 
-
-
-
-[Course Structure Quiz, Problem 9]
-* Question (akanayev-stat6863): 
-- Answer (akanayev-stat6863): 
-
-
-
-[Course Structure Quiz, Problem 10]
-* Question (akanayev-stat6863): 
+* Question (akanayev-stat6863): What would be the instructor's guidelines to initiate, plan, conduct, monitor of status and present team-based data analysis project?
 
 
 
@@ -61,9 +28,10 @@
 * Question (akanayev-stat6863): When we want to separate macro variable from text should we always put "." at the end of macro variables as a rule? For instance, in this part of SAS recipe of the problem: "&className."?
 
 
-[fizz-buzz Week 1 SAS Recipe]
-* Question (akanayev-stat6863): 
 
+[fizz-buzz Week 1 SAS Recipe]
+* Question (akanayev-stat6863): Is there alternative way to solve FizzBuzz problem without using IF-THEN-ELSE statement?
+* Question (akanayev-stat6863): How many numbers are divided both in 3 and 5 between 1 and 100? 
 
 
 ***
