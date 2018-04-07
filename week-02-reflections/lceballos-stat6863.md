@@ -49,7 +49,52 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+* Recipe: basic-dry-programming-pattern;
+* Original recipe: 
+
+%macro <macro-name>;
+    %let <macro-variable-name>1 = <value-1>;
+    %let <macro-variable-name>2 = <value-2>;
+    ...
+    %let <macro-variable-name>n = <value-n>;
+
+    %do i = 1 %to n;
+        <code referencing &&<macro-variable-name>&i.>
+    %end;
+%mend;
+%<macro-name>
+
+
+* modified to print a greeting using the delayed deassignment function;
+* note there is no need for quotation marks when assigning text to variables;
+
+options mprint;
+%macro Greeting;
+    %let Text1 = Hello;
+    %let Text2 = how;
+    %let Text3 = are;
+	%let Text4 = you;
+    %do i = 1 %to 4;
+       	%let greet = &&Text&i.;
+		%put &=greet.;
+    %end;
+%mend;
+%Greeting
+
+Recipe: print-to-log-with-macro-variables
+Original Recipe:
+%put <text to print to log>;
+
+
+* Added text to variable to print out
+* Note the need for a period to let SAS know when the variable name stops
+
+%let Text1 = Hello;
+%put &Text1. How are you;
+%put This is a greeting;
+%put _user_;
+
+/*
 
 
 
