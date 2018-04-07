@@ -50,7 +50,9 @@ macro variables.
 * Question(crai-stat6863) : Resolve &&teach&crs?
 * Answer(crai-stat6863) : First it will resolve &crs to 3 and then teach3 to Forest, Mr. Peter.
 
-
+[print-to-log-with-macro-variables]
+* Question(crai-stat6863) : Can we use many macros in single line?
+* Answer(crai-stat6863) : Yes, we can use more than one macros in single line.
 
 
 ***
