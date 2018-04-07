@@ -62,6 +62,15 @@ macro variables.
 
 
 ```
+*Example;
+*Adding one more macro in single line;
+
+%let recipeName= print-to-log-with-macro-variables;
+%let course=stat6863;
+%put This is an example of the recipe &recipeName. for &course. ;
+%put This is an example of &=recipeName;
+
+
 
 
 * Problem9.5 SAS code ;
