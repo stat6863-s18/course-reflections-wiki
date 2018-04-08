@@ -55,6 +55,9 @@ macro variables.
 * Answer(crai-stat6863) : Yes, we can use more than one macros in single line.
 
 
+[Basic dry Programming]
+* Question(crai-stat6863) : How &&species&i. will resolve?
+
 ***
 
 
@@ -72,7 +75,26 @@ macro variables.
 %put This is an example of the recipe &recipeName. for &course. ;
 %put This is an example of &=recipeName;
 
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
 
+    %do i = 1 %to 2;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
 
 
 * Problem9.5 SAS code ;
