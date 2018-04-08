@@ -96,31 +96,37 @@
 
 
 ```
-1:
-options symbolgen;
-%let mod1=15;
-%let mod2=3;
-%let mod3=5;
-%let x=FizzBuzz;
-%let y=Fizz;
-%let z=Buzz;
-data _null_;
- do i=1 to 100;
-   if mod(i,&mod1)=0 then put "&x";
-   else if mod(i,&mod2)=0 then put "&y";
-   else if mod(i,&mod3)=0 then put "&z";
-   else put i=;
- end;
-run;
+1:print-to-log-with-macro-variables
+%let recipeName = print-to-log-with-macro-variables;
+%put This is an example of the recipe &recipeName.;
+%put This is an example of &=recipeName.;
+%put _user_;
 
 
 
-2:
-%let Class = STAT 6863;
-%let Name=This is Ashish Sharda;
-data _null_;
-    put "Hello, &Class.! &Name";
-run;
+
+2:basic-dry-programming-pattern
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
+
+    %do i = 1 %to 3;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
+
 
 
 
