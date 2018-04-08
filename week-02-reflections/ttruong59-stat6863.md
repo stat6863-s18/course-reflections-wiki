@@ -15,12 +15,6 @@
 
 
 
-[Course Textbook Chapter 9, Problem 4]
-- Question (ttruong59-stat6863): Is it necessary to enclose the assigned value in quotation marks when creating a macro variable?
-- Answer (ttruong59-stat6863): No. There’s no need to enclose the value in quotation marks. If we do, the quotation marks will be stored as part of the value exactly as it is assigned.
-
-
-
 [Course Textbook Chapter 9, Problem 7]
 - Question (ttruong59-stat6863): To manipulate character strings, which macro character functions enable users to perform character manipulations and/or change the value of a macro variable value?
 - Answer (ttruong59-stat6863): Macro character functions like %UPCASE and %SUBSTR allow users to perform character manipulations on macro variable values. For instance, %UPCASE function allow users to change the value of a macro variable from lowercase to uppercase before submitting the value in a SAS program while %SUBSTR enables users to extract part of a character string from the value of a macro variable.
@@ -51,6 +45,17 @@
 
 
 
+[print-to-log-with-macro-variables Week 2 SAS Recipe]
+- Question (ttruong59-stat6863): Is it necessary to enclose the assigned value in quotation marks when creating a macro variable?
+- Answer (ttruong59-stat6863): No. There’s no need to enclose the value in quotation marks. If we do, the quotation marks will be stored as part of the value exactly as it is assigned.
+
+ 
+
+[basic-dry-programming-pattern Week 2 SAS Recipe]
+* Question (ttruong58-stat6863): What is a significant reason to add the %put _user_ statement in this recipe?
+* Answer (ttruong59-stat6863): The reason is because we like to display the user-generated variables, which are Setosa, Versicolor or Virginica, after the macro splitDatasetAndPrintMeans finishes.
+
+
 
 ***
 
@@ -63,7 +68,55 @@
 ```
 
 
-[to be added, and delete this line]
+* Recipe 1: print-to-log-with-macro-variables ;
+* Original recipe:
+put <text to print to log>;
+
+
+* Example:
+%let stat6863 = Advanced-SAS-course;
+%put This is a Week 2 Recipe of &stat6863;
+%put This is a Week 2 Recipe of &=stat6863.;
+%put _user_;
+
+
+* Recipe 2: basic-dry-programming-pattern ;
+* Original recipe:
+%macro <macro-name>;
+    %let <macro-variable-name>1 = <value-1>;
+    %let <macro-variable-name>2 = <value-2>;
+    ...
+    %let <macro-variable-name>n = <value-n>;
+
+    %do i = 1 % to n;
+        <code referencing &&<macro-variable-name>&i.>
+    %end;
+%mend;
+%<macro-name>
+
+
+* Example:
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
+
+    %do i = 1 %to 3;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
+
 
 
 
