@@ -28,8 +28,13 @@
 
 
 
-[Week 2 SAS Recipe]
-* Question (shatcher4-stat6863):
+[print-to-log-with-macro-variables Week 2 SAS Recipe]
+* Question (shatcher4-stat6863): What is the difference between dereferencing with & versus &=?
+
+
+
+[basic-dry-programming-pattern Week 2 SAS Recipe]
+* Question (shatcher4-stat6863): Why is it necessary to have an augment-less macro?
 
 
 
@@ -44,8 +49,41 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+* Recipe: print-to-log-with-macro-variable;
 
+* original recipe:
+%let recipeName = print-to-log-with-macro-variables;
+%put This is an example of the recipe &recipeName.;
+%put This is an example of &=recipeName.;
+%put _user_;
+
+
+
+* Recipe: reference-basic-dry-programming-pattern;
+
+*original recipe:
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
+    
+    %do i = 1 %to 3;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
+    
+   
 
 
 ```
