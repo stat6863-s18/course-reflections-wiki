@@ -35,6 +35,15 @@
 
 
 
+[print-to-log-with-macro-variables Week 2 SAS Recipe]
+
+* Question (lceballos-stat6863): Instead of using an editor with SAS is there a command line option for SAS?
+
+
+
+[basic-dry-programming-pattern Week 2 SAS Recipe]
+
+* Question (lceballos-stat6863): How can I print delayed variables (&&), in one line instead of multiple lines when calling a macro?
 
 
 
