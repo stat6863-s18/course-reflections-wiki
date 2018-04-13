@@ -113,9 +113,9 @@ run;
 filename tempfile clear;
 /*
 
-
 */
-Example;
+
+*Example;
 &macro loadDataIfNotAlreadyAvailable(dsn,url,filetype);
 	%put &=dsn;
 	%put &=url;
