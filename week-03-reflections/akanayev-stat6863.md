@@ -9,7 +9,7 @@
 
 
 [Chapter 11, Problem 2]
-* Question (akanayev-stat6863): If you use mixed parameter whci parameter should list first (positional or keyword)?
+* Question (akanayev-stat6863): If you use mixed parameter which parameter should list first (positional or keyword)?
 
 
 
@@ -155,6 +155,7 @@ options
 	iris,
 	species
 )
+
 
 
 
