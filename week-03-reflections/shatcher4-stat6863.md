@@ -3,27 +3,27 @@
 
 
 
-[Chapter 10,Problem 7]
+[Chapter 10, Problem 7]
 * Question (shatcher4-stat6863): What is the purpose of having an alternate form of INTO during the execution of a PROC SQL step?
 
 
 
-[Chapter 11,Problem 1]
+[Chapter 11, Problem 1]
 * Question (shatcher4-stat6863): Why does a macro program have to begin with a %MACRO statement and end with a %MEND statement?
 
 
 
-[Chapter 11,Problem 3]
+[Chapter 11, Problem 3]
 * Question (shatcher4-stat6863): How would a macro compile while still containing errors?
 
 
 
-[Chapter 11,Problem 5]
+[Chapter 11, Problem 5]
 * Question (shatcher4-stat6863): What is the purpose of the three different styles of macros?
 
 
 
-[Chapter 11,Problem 10]
+[Chapter 11, Problem 10]
 * Question (shatcher4-stat6863): Why is a non-executable (dummy) macro created when there are syntax errors during macro compilation?
 
 
