@@ -98,6 +98,7 @@ options
 */
 
 *Example;
+
 filename tempfile TEMP;
 proc http
 	method = "get"
@@ -116,6 +117,7 @@ filename tempfile clear;
 */
 
 *Example;
+
 &macro loadDataIfNotAlreadyAvailable(dsn,url,filetype);
 	%put &=dsn;
 	%put &=url;
