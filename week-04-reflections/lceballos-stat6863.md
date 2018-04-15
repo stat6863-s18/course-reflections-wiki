@@ -7,7 +7,7 @@
 
 
 * Question (lceballos-stat6863): Can you use more than one element in the WHERE clause?
-* Answer (lceballos-stat6863): Yes, instead of "=" use "in" ("element1","element2",...,"element3")
+* Answer (lceballos-stat6863): Yes, instead of "=" use "in" ("element1","element2",...,"elementn")
 
 
 
