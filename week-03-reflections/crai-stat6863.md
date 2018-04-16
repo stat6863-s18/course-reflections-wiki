@@ -18,8 +18,7 @@
 
 [SAS Certification Prep Guide, Chapter 11 Quiz, Problem 11.10]
 * Question(crai-stat6863):When you submit a call to a compiled macro, what happens? 
-* Answer(crai-stat6863):Processor Execute Compiled macro statement -> If SAS statement is found ->The macro processor pauses while those
-statements are passed to the compiler and then executed -> Then the macro processor continues to repeat these steps until it reaches the %MEND statement. 
+* Answer(crai-stat6863):Processor Execute Compiled macro statement -> If SAS statement is found ->The macro processor pauses while those statements are passed to the compiler and then executed -> Then the macro processor continues to repeat these steps until it reaches the %MEND statement. 
 
 [basic_recipe_for_loading_data_from_remote_Excel_file]
 * Question(crai-stat6863):What is the use of TEMP in filename line?
