@@ -11,7 +11,7 @@
 
 
 
-[Chapter 10, Problem 1]
+[Chapter 11, Problem 1]
 
 
 
@@ -19,7 +19,7 @@
 
 
 
-[Chapter 10, Problem 3]
+[Chapter 11, Problem 3]
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-[Chapter 10, Problem 5]
+[Chapter 11, Problem 5]
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-[Chapter 10, Problem 10]
+[Chapter 11, Problem 10]
 
 
 
