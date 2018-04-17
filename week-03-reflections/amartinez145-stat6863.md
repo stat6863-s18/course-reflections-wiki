@@ -1,8 +1,6 @@
 
 # Questions about Problems and Recipes
 
-# Questions about Problems and Recipes
-
 [SAS Certification Prep Guide, Chapter 10, Question 7]
 * Question (amartinez145-stat6863): Why are there 3 different syntaxes for creating macros in a PROC SQL step, a SCL program and a data step? This seems inefficient. 
 
@@ -24,6 +22,7 @@
 ***
 
 # Recipes Exploration Results
+
 
 options
     mcompilenote=all
@@ -60,3 +59,5 @@ options
             run;
     %end
 %mend
+
+
