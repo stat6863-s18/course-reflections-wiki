@@ -23,7 +23,6 @@
 
 # Recipes Exploration Results
 
-
 options
     mcompilenote=all
     mprint
@@ -58,6 +57,7 @@ options
             proc means n nmiss min q1 median q3 max maxdec=1;
             run;
     %end
+    
 %mend
 
 
