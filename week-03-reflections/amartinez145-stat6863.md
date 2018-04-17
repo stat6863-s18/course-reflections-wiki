@@ -35,7 +35,7 @@ options
     column,
     outputLibrary=Work
 );
-    %let Calldate = %sysfunc(today(), weekdate.);
+    %let callDate = %sysfunc(today(), weekdate.);
 
     proc sql noprint;
         select
@@ -45,10 +45,10 @@ options
         ;
    quit;
 
-    %let numberofIterations = %sysfunc(countw(&iterationList., |);
+    %let numberofIterations = %sysfunc(countw(&iterationList.,|);
 
     %do i = 1 %to %eval(numberofIterations.);
-            %let currentIteration = %scan(&iterationList., &i., |);
+            %let currentIteration = %scan(&iterationList., &i.,|);
             data &outputLibrary..&dsn._&currentIteration.;
                 set &inputLibrary..&dsn.;
                 if &column. = “&currentIteration.”;
