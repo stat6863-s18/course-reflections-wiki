@@ -20,9 +20,13 @@
 * Question (amartinez145-stat6863): Is there a reason that camelCase is recommended for programming? It is not easy on the eyes for proofreading. Does it have more to do with convention or is there empirical data to suggest that it is more efficient and/or accurate?
 
 ***
-
 # Recipes Exploration Results
-
+ 
+ 
+ 
+ ```
+ 
+ 
 options
     mcompilenote=all
     mprint
@@ -58,6 +62,7 @@ options
             run;
     %end
 %mend
-
-
-
+ 
+ 
+ 
+ ```
