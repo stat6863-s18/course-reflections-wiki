@@ -43,7 +43,7 @@
 
 
 *Example;
-*Immitating proc print;
+*Imitating proc print;
 
 proc sql outobs=3;
 	select *
@@ -51,7 +51,7 @@ proc sql outobs=3;
 	;
 quit;
 
-*Immitating proc sort and proc sql;
+*Imitating proc sort and proc sql;
 proc sql outobs=5 number;
 	select *
 	from sashelp.iris
