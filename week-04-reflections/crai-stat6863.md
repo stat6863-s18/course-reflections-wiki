@@ -39,13 +39,9 @@
 # Recipes Exploration Results
 
 
-
 ```
 
 
-# Recipes Exploration Results
-
-```
 *Example;
 *Immitating proc print;
 
