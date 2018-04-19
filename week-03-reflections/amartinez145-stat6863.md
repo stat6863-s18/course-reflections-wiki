@@ -62,6 +62,11 @@ options
             run;
     %end
 %mend
+%splitDatasetAndPrintMeans(
+    sashelp,
+    iris,
+    species
+)    
  
  
  
