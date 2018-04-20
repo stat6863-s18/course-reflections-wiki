@@ -27,17 +27,17 @@
 
 
 
-[Recipe]
+[Advanced_dry_programming_pattern SAS Recipe]
 * Question (mcardoso3-stat6863):  How important is having a footnote included when creating macros?
 
 
 
-[Recipe]
+[Basic_receipe_for_loading_data_from_remote_Excel_file SAS recipe]
 * Question (mcardoso3-stat6863):  What happens if a URL you are trying to import has been deassigned?
 
 
 
-[Recipe]
+[Bonus_advanced_receipe_for_loading_data_from_remote_Excel_file SAS recipe]
 * Question (mcardoso3-stat6863):  Is there a limit to how many macro variables you can create?
 
 
@@ -47,11 +47,9 @@
 
 # Recipes Exploration Results
 
-Recipe:
-%macro <macro-name> (<paramter list needed for macro>);
-	<steps to determine the list of values to loop over>
-
+```
 */
+*Recipe:  Advanced_dry_programming_pattern;
 
 *Example;
 
@@ -96,6 +94,7 @@ options
 
 
 */
+*Recipe:  Basic_receipe_for_loading_data_from_remote_Excel_file;
 
 *Example;
 
@@ -116,6 +115,7 @@ filename tempfile clear;
 
 
 */
+*Recipe:  Bonus_advanced_receipe_for_loading_data_from_remote_Excel_file;
 
 *Example;
 
