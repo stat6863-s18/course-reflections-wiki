@@ -35,7 +35,7 @@
 
 
 
-+[summarize-data-using-sql Week 04 SAS Recipe]
+[summarize-data-using-sql Week 04 SAS Recipe]
 * Question (lceballos-stat6863): How do we make a where clause in a SQL Query that will only return a range of dates?
 
 
