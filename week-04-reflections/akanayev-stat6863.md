@@ -113,6 +113,8 @@ run;
 
 
 * Recipe: recipe_for_summarizing_quantitative_values ;
+
+* original recipe:
 proc means maxdec=1 missing data=FRPM1516_raw;
     class School_Type Charter_School;
     var Percent_Eligible_FRPM_K12 Enrollment_K12;
@@ -121,12 +123,60 @@ run;
 
 
 *Recipe: recipe_for_summarizing_qualitative_values
+
+* original recipe:
 proc freq nlevels data=FRPM1516_raw;
     table
         Educational_Option_Type*Charter_School
         / missing norow nocol nopercent
     ;
 run;
+
+*Recipe: * recipe_for_temporarily_binning_values ;
+
+* original recipe:
+proc format;
+    value $Educational_Option_Type_bins
+         "Alternative Schools of Choice"
+        ,"Community Day School"
+        ,"Continuation School"
+        ,"County Community School"
+        ,"District Special Education Consortia School"
+        ,"Home and Hospital"
+        ,"Juvenile Court School"
+        ,"Opportunity School"
+        ,"Special Education School"
+        ,"State Special School"
+        ,"Youth Authority School"
+        ="Non-traditional"
+        other
+        ="Traditional"
+    ;
+    value Enrollment_K12_bins
+        low-262="Q1 Enrollment"
+        263-510="Q2 Enrollment"
+        511-740="Q3 Enrollment"
+        741-high="Q4 Enrollment"
+    ;
+    value Percent_Eligible_FRPM_K12_bins
+        low-<.36="Q1 FRPM"
+        .36-<.67="Q2 FRPM"
+        .67-<.86="Q3 FRPM"
+        .86-high="Q4 FRPM"
+    ;
+run;
+proc freq data=FRPM1516_raw;
+    table
+        Educational_Option_Type*Enrollment_K12*Percent_Eligible_FRPM_K12
+        / missing list
+    ;
+    format
+        Educational_Option_Type $Educational_Option_Type_bins.
+        Enrollment_K12 Enrollment_K12_bins.
+        Percent_Eligible_FRPM_K12 Percent_Eligible_FRPM_K12_bins.
+    ;
+run;
+
 
 
 
