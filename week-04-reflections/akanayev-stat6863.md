@@ -4,26 +4,29 @@
 
 
 [Chapter 1, Problem 1]
-* Question (akanayev-stat6863): How to check query syntax without executing PROC SQL;
+* Question (akanayev-stat6863): How to check query syntax without executing PROC SQL?
 
 
+[Chapter 1, Problem 2]
+* Question (akanayev-stat6863): What is the qualified column name?
 
-[Chapter 2, Problem 2]
+
+[Chapter 2, Problem 3]
 * Question (akanayev-stat6863): Will column appear in the resulted output if it is used in Where clause in PROC SQL?
 
 
 
-[Chapter 2, Problem 3]
+[Chapter 2, Problem 4]
 * Question (akanayev-stat6863): What is purpose of using Contain statement in Where clause? 
 
 
 
-[Chapter 2, Problem 4] 
+[Chapter 2, Problem 5] 
 * Question (akanayev-stat6863): How to create colums conditionally in PROC SQL?
 
 
 
-[Chapter 2, Problem 5] 
+[Chapter 2, Problem 6] 
 * Question (akanayev-stat6863): Which symbol in comparison operator does not comply ANSI standard for SQL?
 
 
