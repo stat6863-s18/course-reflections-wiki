@@ -152,6 +152,7 @@ run;
 
 
 
+*Example Advanced Recipe;
 proc sql;
     create table cde_2014_analytic_file_v2 as
         select
