@@ -4,37 +4,44 @@
 
 
 [Chapter 3 Quiz, Problem 4]
-*Question(lceballos-stat6863): Does PROC SAS support joining but with subqueries?
+
+* Question(lceballos-stat6863): Does PROC SAS support joining but with subqueries?
 
 
 
 
 [Chapter 3 Quiz, Problem 6]
-*Question(lceballos-stat6863): How do you convert a data type in a PROC SQL when data types differ during a join?
+
+* Question(lceballos-stat6863): How do you convert a data type in a PROC SQL when data types differ during a join?
 
 
 
 [Chapter 3 Quiz, Problem 8]
-*Question(lceballos-stat6863): When shoud we use SAS merge instead of PROC SQL?
+
+* Question(lceballos-stat6863): When shoud we use SAS merge instead of PROC SQL?
 
 
 
 [Chapter 5 Quiz, Problem 4]
-*Question(lceballos-stat6863): Are the processing steps for PROC SQL the same AS a SAS merge?
+
+* Question(lceballos-stat6863): Are the processing steps for PROC SQL the same AS a SAS merge?
 
 
 
 [Chapter 5 Quiz, Problem 5]
-*Question(lceballos-stat6863): Does SQL get converted to SAS when doing a PROC SQL?
+
+* Question(lceballos-stat6863): Does SQL get converted to SAS when doing a PROC SQL?
 
 
 
 [Basic_recipe_for_combining_data_horizontally]
+
 * Question(lceballos-stat6863):What's the difference between the retain and keep arguments?
 
 
 
 [Adv_recipe_for_combining_data_horizontally]
+
 * Question(lceballos-stat6863): Is it convention to not capitilize SQL clauses in SAS?
 
 
