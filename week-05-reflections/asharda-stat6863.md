@@ -37,6 +37,17 @@
 * Question (asharda-stat6863):How do you use  SET statement with the KEY= option
 - Answer (asharda-stat6863): In a DATA step match-merge, SAS reads observations from the input data sets sequentially and match-merges them with observations from other input data sets.
 
+
+[basic_recipe_for_combining_data_horizontally Week 05 SAS Recipe]
+* Question (asharda-stat6863):Why is label statement used?.
+
+
+
+[adv_recipe_for_combining_data_horizontally Week 05 SAS Recipe]
+* Question (asharda-stat6863):Why is proc sql mainly used by SAS programmers?.
+
+
+
 ***
 
 
