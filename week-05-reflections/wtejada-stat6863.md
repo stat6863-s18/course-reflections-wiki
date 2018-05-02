@@ -21,6 +21,9 @@
 [basic_recipe_for_combining_data_horizontally Week 5 SAS Recipe]
 * Question (wtejada-stat6863):It seems that DATA steps seem used quite a bit more often, but the textbook paints PROC SQL almost as a better alternative. Is this actually the case?
 
+[adv_recipe_for_combining_data_vertically Week 5 SAS Recipe]
+* Question (wtejada-stat6863): Why is it a good idea to label columns with the empty string using " " instead of giving them a name?
+
 
 
 ***
@@ -139,23 +142,25 @@ run;
 * original recipe:
 ```
 proc sql;
-    create table frpm_analytic_file_v2 as
-        (
-            select
-                 *
-                ,"1415" AS data_source
-            from
-                frpm1415_raw
-        )
-        union all corr
-        (
-            select
-                 *
-                ,"1516" AS data_source
-            from
-                frpm1516_raw
-        )
+    create table cde_2014_analytic_file_v2 as
+        select
+             coalesce(B.CDS, A.CDS_Code) AS CDS_Code label " "
+            ,coalesce(B.sname,A.School) AS School label " "
+            ,A.TOTAL AS UC_Coursework_Completers label " "
+            ,B.NUMTSTTAKR AS SAT_Takers label " "
+            ,B.enroll12 AS Twelfth_Graders label " "
+            ,input(B.NUMTSTTAKR,best12.)
+             -
+             input(A.TOTAL,best12.)
+             AS
+             Excess_SAT_Takers label " "
+        from
+            gradaf15_raw as A
+            full join
+            sat15_raw as B
+            on A.CDS_Code = B.CDS
     ;
 quit;
+
 ```
 
