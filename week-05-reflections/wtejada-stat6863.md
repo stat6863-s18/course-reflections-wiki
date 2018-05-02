@@ -29,13 +29,10 @@
 
 # Recipes Exploration Results
 
-* Recipe:  basic_recipe_for_combining_data_horizontally ; 
-* original recipe:
 
-
-```
 
 *data set up;
+```
 %let inputDataset1URL =
 https://github.com/stat6250/team-0_project2/blob/master/data/gradaf15.xls?raw=true
 ;
@@ -87,11 +84,10 @@ https://github.com/stat6250/team-0_project2/blob/master/data/sat15-edited.xls?ra
     &inputDataset2URL.,
     &inputDataset2Type.
 )
-
-
-
-
 ```
+
+* Recipe:  basic_recipe_for_combining_data_horizontally; 
+* original recipe:
 ```
 data cde_2014_analytic_file_v1;
     retain
@@ -139,3 +135,27 @@ data cde_2014_analytic_file_v1;
     ;
 run;
 ```
+* Recipe:  adv_recipe_for_combining_data_vertically ; 
+* original recipe:
+```
+proc sql;
+    create table frpm_analytic_file_v2 as
+        (
+            select
+                 *
+                ,"1415" AS data_source
+            from
+                frpm1415_raw
+        )
+        union all corr
+        (
+            select
+                 *
+                ,"1516" AS data_source
+            from
+                frpm1516_raw
+        )
+    ;
+quit;
+```
+
