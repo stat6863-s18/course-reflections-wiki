@@ -4,48 +4,31 @@
 
 
 [Chapter 2 Quiz, Problem 5]
-
-
-
 * Question(lceballos-stat6863): Can you join a SQL table with a SAS table?
 
 
 
 [Chapter 2 Quiz, Problem 6]
-
-
-
 * Question(lceballos-stat6863): Can you convert the data type of a variable in proc SQL?
 
 
 
 [Chapter 2 Quiz, Problem 7]
-
-
-
 * Question(lceballos-stat6863): Can update a SAS table using the same method as updating a SQL table (update)?
 
 
 
 [Chapter 2 Quiz, Problem 8]
-
-
-
 * Question(lceballos-stat6863): Can you connect SAS with to an access database and access the data using SAS SQL?
 
 
 
 [Chapter 3 Quiz, Problem 1]
-
-
-
 * Question(lceballos-stat6863): Can you use this method to append another column to a table with identical values?
 
 
 
 [combine-data-at-different-grains Week 7 SAS Recipe] 
-
-
 * Question(lceballos-stat6863): How can we set up a drill up relationship using counts for groups?
 - Answer(lceballos-stat6863): select count(*) from table group by group.
 
