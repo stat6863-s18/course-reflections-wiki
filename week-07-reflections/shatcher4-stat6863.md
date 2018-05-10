@@ -18,7 +18,7 @@
 
 
 
-[Chapter 3, Problem 1]: 
+[Chapter 3, Problem 1]
 - Question (shatcher4-stat6863): What is the purpose of a Cartesian product?
 
 
