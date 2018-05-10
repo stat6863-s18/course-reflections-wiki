@@ -44,7 +44,7 @@
 ```
 
 
-* Recipe: basic_recipe_for_combining_data_vertically
+* Recipe: combine-data-at-different-grains
 
 *original recipe:
 proc sql number;
