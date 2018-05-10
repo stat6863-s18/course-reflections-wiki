@@ -4,7 +4,7 @@
 
 
 [Chapter 2, Problem 5]
-* Question (shatcher4-stat6863): When using SELECT *, what is the purpose of the FEEDBACK option in the PROC SQL statement?
+* Question (shatcher4-stat6863): When using SELECT, what is the purpose of the FEEDBACK option in the PROC SQL statement?
 
 
 
