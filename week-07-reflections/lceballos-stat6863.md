@@ -47,8 +47,7 @@
 
 
 * Question(lceballos-stat6863): How can we set up a drill up relationship using counts for groups?
-
--Answer(lceballos-stat6863): select count(*) from table group by group.
+Answer(lceballos-stat6863): select count(*) from table group by group.
 
 
 
