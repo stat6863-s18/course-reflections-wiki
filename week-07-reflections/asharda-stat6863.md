@@ -55,17 +55,11 @@
 
 
 
-[adv_recipe_for_combining_data_vertically Week 6 SAS Recipe]
-* Question (asharda-stat6863)What is the significance of using UNION ALL
-
-
-
 ***
 
 
 
 # Recipes Exploration Results
-
 
 
 
