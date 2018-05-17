@@ -40,12 +40,12 @@
 proc sql;
     select
          Species 
-	,SepalLength
-	,SepalWidth
-	,PetalLength
-	,PetalWidth
+	 ,SepalLength
+	 ,SepalWidth
+	 ,PetalLength
+	 ,PetalWidth
     from
-        sashelp.iris
+         sashelp.iris
     ;
 quit;
 
@@ -56,13 +56,13 @@ run;
 proc sql;
     select
 	 Species
-	,SepalLength
-	,SepalWidth
-        ,PetalLength
-        ,PetalWidth
+	 ,SepalLength
+	 ,SepalWidth
+         ,PetalLength
+         ,PetalWidth
 
     from
-        sashelp.iris
+         sashelp.iris
     ;
 quit;
 *Example For Approach 3;
@@ -80,13 +80,13 @@ quit;
 proc sql;
     select
 	 Species	
-	,SepalLength	
-	,SepalWidth	
-	,PetalLength	
-	,PetalWidth	
+	 ,SepalLength	
+	 ,SepalWidth	
+	 ,PetalLength	
+	 ,PetalWidth	
 
     from
-        sashelp.iris
+         sashelp.iris
     ;
 quit;
 
