@@ -27,9 +27,7 @@
 ***
 
 
-
 # Recipes Exploration Results
-
 
 
 ```
