@@ -75,6 +75,7 @@ proc sql;
      sashelp.iris
     ;
 quit;
+
 *Approach 3;
 proc sql;
     select
