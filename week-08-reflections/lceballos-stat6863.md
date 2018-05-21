@@ -79,6 +79,17 @@ quit;
 *Approach 3;
 proc sql;
     select
+	name
+    from
+	dictionary.columns
+    where
+        lowcase(libname) = 'sashelp'
+    and
+	lowcase(memname) = 'iris'
+    ;
+quit;
+proc sql;
+    select
 	Species	
 	,SepalLength	
 	,SepalWidth	
