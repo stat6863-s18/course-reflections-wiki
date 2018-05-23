@@ -36,7 +36,7 @@
 [* DDL and DML SQL Queries Weekly SAS Recipe]
 * Question (akanayev-stat6863): What kind of operation does DDL include?
 * Question (akanayev-stat6863): What kind of operation does DML include?
-* Question (akanayev-stat6863): What are main queries that available in RDMS? 
+* Question (akanayev-stat6863): What are main queries that available in RDMSes? 
 
 ***
 
