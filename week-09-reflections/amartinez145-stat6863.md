@@ -3,7 +3,30 @@
 
 
 
-[place your questions/answers here, and delete this line]
+# Questions about Problems and Recipes
+
+[SAS Certification Prep Guide, Chapter 5, Question 2]
+* Question (amartinez145-stat6863): How would a programmer address an issue with column width for a numerical variable that is >8 digits? Would you need to specify that variable as a character variable to maintain the value as present in the data set? 
+
+[SAS Certification Prep Guide, Chapter 5, Question 6
+* Question (amartinez145-stat6863): Is there a limit to the number of SET clauses that can be used when adding rows to a table?
+
+[SAS Certification Prep Guide, Chapter 5, Question 6
+* Question (amartinez145-stat6863): Is there a limit to the number of WHEN-THEN clauses that can be used when updating variables using the CASE statement?
+
+[SAS Certification Prep Guide, Chapter 5, Question 7
+* Question (amartinez145-stat6863): Is there a limit to the number of VALUES clauses that can be used when adding rows to a table?
+
+[SAS Certification Prep Guide, Chapter 5, Questions 6and7
+* Question (amartinez145-stat6863): With regard to the optional column listing in the INSERT statement, is including this considered a best practice in the “real world”? 
+
+
+[Week 9 SAS Recipe: DDL]
+* Question (amartinez145-stat6863): When using the ALTER TABLE statement, when adding columns, how does a programmer populate the added columns with data? I did not see an example of this in the book.
+
+[Week 9 SAS Recipe: DML]
+* Question (amartinez145-stat6863): For the last step, could you delete rows “WHERE SepalLength > 64” directly without any drawbacks? I need to play with it a little more to test any limitations…
+
 
 
 
