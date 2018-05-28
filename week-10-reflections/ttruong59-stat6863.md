@@ -39,6 +39,12 @@
 
 
 
+[summarize-data-using-proc-report Week 10 SAS Recipe]
+- Question (ttruong59-stat6863): What does an "ODS Sandwich" use for? 
+- Answer (ttruong59-stat6863): ODS stands for Output Delivery System and it is an useful technique used to limit outputs.
+
+
+
 ***
 
 
