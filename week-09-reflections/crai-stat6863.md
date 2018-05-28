@@ -21,6 +21,12 @@
 * Question(crai-stat6863): Use of alter table?
 * Answer(crai-stat6863): Alter table is use for the modification, deletion and for adding new columns.
 
+[Example to create table]
+* Question(crai-stat6863): Can we define length of numeric varable while creating table?
+
+[Delete rows of data]
+* Question(crai-stat6863): Does it delete data permanently?
+
 
 ***
 
